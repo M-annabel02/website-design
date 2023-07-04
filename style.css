@@ -1,0 +1,19 @@
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    text-align: left;
+}
+.menu{
+    background-color:rgb(177, 122, 52);
+    border: 1px rgb(207, 194, 188);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+body
+        {
+            background-color:rgb(102, 112, 109);
+            text-decoration:wavy;
+
+        }
