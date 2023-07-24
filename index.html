@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="layout" href="layout.drawio"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+          font-size: 15px;
+          cursor: pointer;
+          user-select:none;
+
+        }
+        
+        .fa:hover {
+          color: darkblue;
+        }
+
+    </style>
 </head>
 <body>
 <div class="container">
@@ -48,12 +61,34 @@
 
         </div>
             <div class="main-content" >
-                
-                
-            </div>
-            
-        <div class="content right">
+                <div class="food"><img src="food.jpg" alt="food" height="100%" width="100%"/></div>
+           <div class="ff">
+            <h4>I don't know what it is about me and trying new recipies and restaurants.Food is art, atleast that's what I think.Preparing a delicious meal for someone has to be something done from the heart.I just can't wait to show you and rate the meals prepared my others and also yours truly</h4>
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
 
+            <script>
+                function myFunction(x) {
+                x.classList.toggle("fa-thumbs-down");
+               }
+                </script>
+                
+
+           </div>
+    </div>
+            
+        <div class="content-right">
+           <div class="sunset" > <img src="sunset.jpg" alt="sunset" height="40%" width="100%"/></div>
+           <div class="text" >
+            <h3>There has always been something about the sunset. I don't know if it's how the colors combine to make this beautiful site or how the sun feels warm on the face.But I'm so glad I got to capture this moment</h3>
+            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+            <script>
+            function myFunction(x) {
+            x.classList.toggle("fa-thumbs-down");
+           }
+            </script>
+           </div>
+           
             </div>
         </div>
      <div class="footer">

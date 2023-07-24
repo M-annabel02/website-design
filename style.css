@@ -25,19 +25,30 @@ h2{
     font-size: x-large;
 } 
 .main-content{
-    background-color: bisque;
-    
-}   
-.pic{
-    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+ 
 }
+.ff{
+    font-size: 15px;
+    padding-left: 5px;
+}
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+ .text {
+    font-size: 15px;
+    padding-left: 5px;
+  }
+   
 p{
     text-align: center;
 }
-.pic1{
-    border: 1px solid black;}
 .links{
-    text-align:center;
+    justify-content: right;
     color: white;
 }
 .footer{
