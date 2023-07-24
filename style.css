@@ -6,15 +6,17 @@ li {
      list-style-type: none;
     display: inline-block;
     padding: 5px;
-    text-align: right;
+    text-transform: uppercase;
 }
 .menu{
     background-color:rgb(207, 194, 188);
+    background-image: url(nav.jpg);
     border: 1px rgb(207, 194, 188);
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
 }
+
 h1 {
     text-align: center;
     font-weight: lighter;
@@ -24,6 +26,19 @@ h2{
     text-align: center;
     font-size: x-large;
 } 
+.home-pics{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: space-around;
+}
+.home-pics img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pics{
+    display:flex;
+}
 .main-content{
     display: flex;
     align-items: center;
@@ -49,10 +64,11 @@ p{
 }
 .links{
     justify-content: right;
-    color: white;
+    color: black;
 }
 .footer{
     background-color:rgb(207, 194, 188);
+    background-image: url(footer.jpg);
     border: 1px rgb(207, 194, 188);
     border-radius: 5px;
     padding: 5px;
@@ -60,5 +76,9 @@ p{
 }
 form{
     text-align: center;
+}
+button{
+    background-color: mediumslateblue;
+    color:aliceblue;
 }
 

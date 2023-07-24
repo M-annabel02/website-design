@@ -24,10 +24,9 @@
 <body>
 <div class="container">
     <div class="header">
-        <div class="logo">
-            <img src="blaiy.png"alt="logo-image" height="10%" width="10%">
-        </div>
+        
         <div class="menu">
+                <img src="blaiy.png"alt="logo-image" height="10%" width="10%">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -60,43 +59,37 @@
             <script type="text/javascript" src="file.js"></script>
 
         </div>
-            <div class="main-content" >
-                <div class="food"><img src="food.jpg" alt="food" height="100%" width="100%"/></div>
-           <div class="ff">
-            <h4>I don't know what it is about me and trying new recipies and restaurants.Food is art, atleast that's what I think.Preparing a delicious meal for someone has to be something done from the heart.I just can't wait to show you and rate the meals prepared my others and also yours truly</h4>
-            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-
-            <script>
-                function myFunction(x) {
-                x.classList.toggle("fa-thumbs-down");
-               }
-                </script>
-                
-
-           </div>
-    </div>
-            
-        <div class="content-right">
-           <div class="sunset" > <img src="sunset.jpg" alt="sunset" height="40%" width="100%"/></div>
-           <div class="text" >
-            <h3>There has always been something about the sunset. I don't know if it's how the colors combine to make this beautiful site or how the sun feels warm on the face.But I'm so glad I got to capture this moment</h3>
-            <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-
-            <script>
-            function myFunction(x) {
-            x.classList.toggle("fa-thumbs-down");
-           }
-            </script>
-           </div>
-           
-            </div>
+        <div>
+    <div class="pics">
+        <div class="home-pics">
+            <img src="water1.jpg" height="350px" width="250px">
+            <img src="Tumblr.png" height="350px" width="250px">
+            <img src="lamu1.png" height="350px" width="250px">
         </div>
+        <div class="home-pics">
+            <img src="lamu3.jpg" height="350px" width="250px">
+            <img src="water2.jpg" height="350px" width="250px">
+            <img src="picnic.jpg"height="350px" width="250px">
+        </div>
+        <div class="home-pics">
+            <img src="lamu4.png" height="350px" width="250px">
+            <img src="lamu2.png" height="350px" width="250px">
+        </div>     
+   </div>
+            
+
+        
+          
+          
      <div class="footer">
         <p><i>JOIN MY MAILING LIST
 
         <form>
-            Email Address:<input type="text" name="email_address"/><br>
-            <input type="button" name="subscribe" value="Subscribe"/>
+            <label for="name">Your name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br>
+            <label for="Email Address">Email Address</label><br>
+            <input type="Email Address" id="name" name="name" placeholder="Email Address" required><br>
+            <button type="button" name="subscribe" value="Subscribe">SUBSCRIBE</button>
         </form></i>
         <ul>
             <li><a href="index.html">Home</a></li>

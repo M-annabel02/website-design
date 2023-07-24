@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="layout" href="layout.drawio"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+          font-size: 15px;
+          cursor: pointer;
+          user-select:none;
+
+        }
+        
+        .fa:hover {
+          color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="blaiy.png"alt="logo-image" height="10%" width="10%">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="family.html">Family/Friends</a></li>
+                    <li><a href="food.html">Food</a></li>       
+                    <a href="#pinterest" class="links">   
+                        <i class="fa fa-pinterest"></i>   
+                    </a>   
+                     <a href="#google" class="links" >   
+                            <i class="fa fa-google"></i>   
+                    </a>     
+                    <a href="#instagram" class="links">   
+                            <i class="fa fa-instagram"></i>   
+                     </a>                              
+                    <a href="#youtube" class="links">   
+                            <i class="fa fa-youtube"></i>   
+                    </a> 
+                </ul>  
+            
+                
+                
+            </div>
+            <div class="content-right">
+                <div class="sunset" ><img src="sunset.jpg" max-height="100%" max-width="100%"/></div>
+    <div class="text" >
+        <h3>There has always been something about the sunset. I don't know if it's how the colors combine to make this beautiful site or how the sun feels warm on the face.But I'm so glad I got to capture this moment</h3>
+        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+   
+        <script>
+        function myFunction(x) {
+        x.classList.toggle("fa-thumbs-down");
+       }
+        </script>
+        <i onclick="comment()" class="fa fa-comments"></i>
+        <script>
+            function comment(){
+                var y=
+                document.createElement("TEXTAREA");
+                var z=document.createTextNode("comment here");
+                y.appendChild(z);
+                document.body.appendChild(y);
+   
+            }
+        </script>
+        </div>
+</body>
+</html>
