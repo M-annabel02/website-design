@@ -2,15 +2,16 @@ div{
     margin-bottom: 50px;
     background-color: whitesmoke;
 }
-li {
+.menu li {
      list-style-type: none;
     display: inline-block;
     padding: 5px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .menu{
-    background-color:rgb(207, 194, 188);
-    background-image: url(nav.jpg);
+    background-image: url(pastel.jpg);
+    opacity: 0.7;
     border: 1px rgb(207, 194, 188);
     border-radius: 5px;
     padding: 5px;
@@ -21,16 +22,29 @@ h1 {
     text-align: center;
     font-weight: lighter;
     font-style: italic;
+    color: plum;
 } 
 h2{
     text-align: center;
     font-size: x-large;
+    color: plum;
 } 
+.welcome{
+    background-image: url(paint1.jpg);
+    background-size: contain;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
 .home-pics{
     display: flex;
     flex-direction: column;
     margin-right: 10px;
     justify-content: space-around;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 .home-pics img{
     width: 100%;
@@ -39,11 +53,18 @@ h2{
 .pics{
     display:flex;
 }
-.main-content{
+h4{
+    text-shadow: 2px 2px 4px black;
+    font-size: xx-large;
+    text-align: center;
+    color: plum;
+}
+.me{
     display: flex;
     align-items: center;
-    justify-content: center
- 
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    background-image: url(pastel.jpg);
 }
 .ff{
     font-size: 15px;
@@ -52,14 +73,14 @@ h2{
 .content-right {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
  .text {
     font-size: 15px;
     padding-left: 5px;
   }
    
-p{
+i {
     text-align: center;
 }
 .links{
@@ -74,6 +95,13 @@ p{
     padding: 5px;
     margin: 5px;
 }
+.footer a{
+    align-items: center;
+
+}
+.footer p{
+    text-align: center;
+}
 form{
     text-align: center;
 }
@@ -81,4 +109,17 @@ button{
     background-color: mediumslateblue;
     color:aliceblue;
 }
-
+.intro{
+    display:flex;
+    flex-wrap: wrap;
+}
+.image-item{
+    width:20%;
+    padding:10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.image-item img{
+    width:100%;
+    height:auto;
+}

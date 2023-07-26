@@ -8,41 +8,108 @@
     <link rel="layout" href="layout.drawio"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .fa {
-          font-size: 15px;
-          cursor: pointer;
-          user-select:none;
-
-        }
-        
-        .fa:hover {
-          color: darkblue;
-        }
-        
+      .navbar{
+        background-image: url(pastel.jpg);
+        opacity: 0.7;
+        border: 1px rgb(207, 194, 188);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+       }
+      .navbar li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
     </style>
+    
 </head>
 <body>
-    <div class="background-image">
-        <img src="pizza.jpg" width="100%" height="600px">
-        <h1>YUMMY TIME</h1>
-    </div>
-       
-            
-                
-                
-            </div>
-            <div class="main-content">
-    <div class="food"><img src="food.jpg" alt="food" height="100%" width="100%"/></div>
-    <div class="ff">
-     <h4>I don't know what it is about me and trying new recipes and restaurants.Food is art, atleast that's what I think.Preparing a delicious meal for someone has to be something done from the heart.I just can't wait to show you and rate the meals prepared my others and also yours truly</h4>
-     <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blaiy.html">Blaiy</a></li>
+      <li><a href="lifestyle.html">Lifestyle</a></li>
+      <li><a href="relations.html">Relations</a></li>
+      <li><a href="food.html">Food</a></li>
+      </ul> 
+  </div>
+  <div style="position:relative;">
+    <img src="beefpasta.png" height="100%" width="100%">
+    <p style="position:absolute; top:30%; left:50%; transform:translate(-50%,-50%); color:white;font-size:150px;"><b><i>Yummy Time</i><b></b></p>
+  </div>
+  <div class="recipes">
+    <i onclick="toggleComments()" class="fa fa-comment-o"></i>
+<div id="comments" style="display: none;">
+  <!-- Comment section HTML goes here -->
+  <form>
+    <label for="name">Name:</label>
+    <input type="text"id="name"><br><br>
+    <label for="comment">Comment:</label><br>
+    <textarea style="font-size:16px;#333; background-color:#f5f5f5;" id="comment" rows="5" cols="40"></textarea><br><br>
+    <button type="button"
+    onclick="addComment()">Post</button>
 
-     <script>
-         function myFunction(x) {
-         x.classList.toggle("fa-thumbs-down");
-        }
-         </script>
-         <i class="fa fa-comments"></i>
-         </div>
+  </form>
+</div>
+
+<script>
+  function addComment() {
+    var name = document.getElementById("name").value;
+    var comment = document.getElementById("comment").value;
+    var commentBox = document.getElementById("comments");
+    var newComment = document.createElement("div");
+    newComment.innerHTML = "<strong>" + name + "</strong><br>" + comment;
+    commentBox.appendChild(newComment);
+  }
+function toggleComments() {
+  var comments = document.getElementById('comments');
+  if (comments.style.display === 'none') {
+    comments.style.display = 'block';
+  } else {
+    comments.style.display = 'none';
+  }
+}
+</script>
+  </div>
+  
+  <div class="footer">
+    <p><i>Remember to hit the subscribe button. Here's to a new chapter in our lives, one filled with endless curiosity and enthusiasm! See you soon, fellow explorers!<br>JOIN MY MAILING LIST
+
+    <form>
+        <label for="name">Your name</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name" required><br>
+        <label for="Email Address">Email Address</label><br>
+        <input type="Email Address" id="name" name="name" placeholder="Email Address" required><br>
+        <button type="button" name="subscribe" value="Subscribe">SUBSCRIBE</button>
+    </form></i>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blaiy.html">Blaiy</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+        <li><a href="relations.html">Relations</a></li>
+        <li><a href="food.html">Food</a></li>
+    <a href="#pinterest" class="links">   
+        <i class="fa fa-pinterest"></i>   
+    </a>   
+     <a href="#google" class="links" >   
+            <i class="fa fa-google"></i>   
+    </a>     
+    <a href="#instagram" class="links">   
+            <i class="fa fa-instagram"></i>   
+     </a>                              
+    <a href="#youtube" class="links">   
+            <i class="fa fa-youtube"></i>   
+    </a> 
+    <a href="#email" class="links">   
+      <i class="fa fa-envelope"></i>   
+</a> 
+    </ul>
+
+    <p>Copy right &copy; 2023 by Blaiy</p> 
+     
+</div>
 </body>
 </html>
