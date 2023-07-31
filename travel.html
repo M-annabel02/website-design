@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="layout" href="layout.drawio"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .navbar{
+        background-image: url(pastel.jpg);
+        opacity: 0.7;
+        border: 1px rgb(207, 194, 188);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+       }
+      .navbar li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+        .welcomes{
+          background-image: url(travela.jpg);
+          background-size: contain;
+          color: white;
+          padding: 50px;
+          text-align: center;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: bolder;
+          font-size: xx-large;
+      }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blaiy.html">Blaiy</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="relations.html">Relations</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="travel.html">Travel</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+          </ul> 
+      </div>
+      <div style="position:relative;">
+        <img src="Site.jpg" height="100%" width="100%">
+        <p style="position:absolute; top:20%; left:50%; transform:translate(-50%,-50%); color:white;font-size:150px;"><b><i>Travel</i><b></b></p>
+      </div>
+      <div class="welcomes">
+        <h3>Where To?</h3>
+    </div>
+    <div class="travel">
+        <div class="travel-pics">
+           <img src="travel1.jpg" height="350px" width="250px">
+           <img src="travel2.jpg" height="350px" width="250px">
+           <img src="travel4.png" height="350px" width="250px">
+        </div>
+        <div class="travel-pics">
+           <img src="travel3.jpg" height="350px" width="250px">
+           <img src="travel6.jpg" height="350px" width="250px">
+           <img src="travel10.jpg"height="350px" width="250px">
+        </div>
+        <div class="travel-pics">
+           <img src="travel12.png" height="350px" width="250px">
+           <img src="travel7.jpg" height="350px" width="250px">
+           <img src="Praga_.jpg" height="350px" width="250px">
+
+
+        </div>   
+        <div class="travel-pics">
+            <img src="travel8.jpg" height="350px" width="250px">
+            <img src="travel9 (2).jpg" height="350px" width="250px">
+         </div>   
+    </div>
+    <div class="destination">
+        <div class="d-image">
+          <img src="travel11.jpg">
+          <p> "THE MAASAI OF KENYA: Nomadic Heritage and Resilient Traditions"<br>
+
+            In the heart of Kenya, the Maasai people thrive as semi-nomadic pastoralists, embracing their rich heritage and cultural practices. Warriors, beadwork, and unique rituals define their identity, while conservation efforts and ecotourism initiatives showcase their commitment to a harmonious relationship with nature. Discover the captivating world of the Maasai, where tradition meets resilience.</p>
+          <i id="likeButton" class="fa fa-heart" onclick="like()" style="cursor: pointer; color:plum;"></i>
+          <script>
+            var likeCount = 0;
+            function like() {
+            if (likeCount % 2 == 0) {
+              document.getElementById("likeButton").style.color = "red";
+            }
+            else {
+              document.getElementById("likeButton").style.color = "plum";
+           }
+            likeCount++;
+           }
+          </script>
+    
+          <i onclick="toggleComments()" class="fa fa-comment" style="color:plum;"></i>
+          <div id="comments" style="display: none;">
+      <!-- Comment section HTML goes here -->
+          <form>
+          <label for="name">Name:</label>
+          <input type="text"id="name"><br><br>
+          <label for="comment">Comment:</label><br>
+          <textarea style="font-size:16px; background-color:#f5f5f5;" id="comment" rows="5" cols="40"></textarea><br><br>
+          <button type="button"
+          onclick="addComment()">Post</button>
+    
+          </form>
+          </div>
+    
+          <script>
+          function addComment() {
+          var name = document.getElementById("name").value;
+          var comment = document.getElementById("comment").value;
+          var commentBox = document.getElementById("comments");
+          var newComment = document.createElement("div");
+          newComment.innerHTML = "<strong>" + name + "</strong><br>" + comment;
+          commentBox.appendChild(newComment);
+          }
+          function toggleComments() {
+          var comments = document.getElementById('comments');
+          if (comments.style.display === 'none') {
+          comments.style.display = 'block';
+          } else {
+          comments.style.display = 'none';
+          }
+          }
+          </script>
+        </div>
+        <div class="d-image">
+        <img src="travel9.jpg">
+        <p>"Tsavo: Kenya's Untamed Wilderness"<br>
+
+            Tsavo National Park, East Africa's grandest treasure, spans vast landscapes, teeming with iconic wildlife. Legendary history, birdwatcher's paradise, and conservation success stories await in this safari wonderland. Experience the untamed heartbeat of Africa in Tsavo's raw beauty and ancient allure.</p>
+        <i id="loveButton" class="fa fa-heart" onclick="love()" style="cursor: pointer; color:plum;"></i>
+        <script>
+          var loveCount = 0;
+          function love() {
+            if (loveCount % 2 == 0) {
+              document.getElementById("loveButton").style.color = "red";
+            } else {
+              document.getElementById("loveButton").style.color = "plum";
+            }
+            loveCount++;
+          }
+        </script>
+        
+            <i onclick="toggleComnts()" class="fa fa-comment" style="color:plum;"></i>
+        <div id="comnts" style="display: none;">
+          <!-- Comment section HTML goes here -->
+          <form>
+            <label for="name">Name:</label>
+            <input type="text"id="name"><br><br>
+            <label for="comnt">Comment:</label><br>
+            <textarea style="font-size:16px; background-color:#f5f5f5;" id="comnt" rows="5" cols="40"></textarea><br><br>
+            <button type="button"
+            onclick="addComment()">Post</button>
+        
+          </form>
+        </div>
+        
+        <script>
+          function addComnt() {
+            var name = document.getElementById("name").value;
+            var comment = document.getElementById("comnt").value;
+            var commentBox = document.getElementById("comnts");
+            var newComment = document.createElement("div");
+            newComment.innerHTML = "<strong>" + name + "</strong><br>" + comment;
+            commentBox.appendChild(newComment);
+          }
+        function toggleComnts() {
+          var comments = document.getElementById('comnts');
+          if (comments.style.display === 'none') {
+            comments.style.display = 'block';
+          } else {
+            comments.style.display = 'none';
+          }
+        }
+        </script>
+        </div>
+        <div class="d-image">
+        <img src="travel5.png">
+        <p> "Lamu: Swahili Heritage on a Timeless Island"<br>
+
+            Lamu, a UNESCO World Heritage Site, embraces centuries of Swahili culture. Its ancient streets, traditional festivals, and dhow-filled waters offer a serene escape from the modern world. Step back in time, unwind on pristine beaches, and immerse yourself in Lamu's captivating charm.</p>
+        <i id="heartButton" class="fa fa-heart" onclick="heart()" style="cursor: pointer; color:plum;"></i>
+          <script>
+            var heartCount = 0;
+            function heart() {
+            if (heartCount % 2 == 0) {
+              document.getElementById("heartButton").style.color = "red";
+            }
+            else {
+              document.getElementById("heartButton").style.color = "plum";
+           }
+            heartCount++;
+           }
+          </script>
+    
+          <i onclick="toggleCom()" class="fa fa-comment" style="color:plum;"></i>
+          <div id="com" style="display: none;">
+      <!-- Comment section HTML goes here -->
+          <form>
+          <label for="name">Name:</label>
+          <input type="text"id="name"><br><br>
+          <label for="com">Comment:</label><br>
+          <textarea style="font-size:16px; background-color:#f5f5f5;" id="com" rows="5" cols="40"></textarea><br><br>
+          <button type="button"
+          onclick="addCom()">Post</button>
+    
+          </form>
+          </div>
+    
+          <script>
+          function addCom() {
+          var name = document.getElementById("name").value;
+          var comment = document.getElementById("com").value;
+          var commentBox = document.getElementById("com");
+          var newComment = document.createElement("div");
+          newComment.innerHTML = "<strong>" + name + "</strong><br>" + comment;
+          commentBox.appendChild(newComment);
+          }
+          function toggleCom() {
+          var comments = document.getElementById('com');
+          if (comments.style.display === 'none') {
+          comments.style.display = 'block';
+          } else {
+          comments.style.display = 'none';
+          }
+          }
+          </script>
+        </div>
+        <div class="d-image">
+            <img src="travel4.jpg">
+            <p>"Fort Jesus: Unraveling the Maritime Mystique of Mombasa"<br>
+
+                Stepping into the majestic Fort Jesus is like delving into the pages of history, where a convergence of cultures shaped Mombasa's maritime destiny. This captivating fortress stands as a cultural bridge, beckoning visitors to discover the intriguing stories of trade, conquest, and resilience that echo through its walls. Join us as we unravel the maritime mystique of Fort Jesus and journey back in time to a bygone era of exploration and triumph."</p>
+            <i id="hButton" class="fa fa-heart" onclick="h()" style="cursor: pointer; color:plum;"></i>
+              <script>
+                var hCount = 0;
+                function h() {
+                if (hCount % 2 == 0) {
+                  document.getElementById("hButton").style.color = "red";
+                }
+                else {
+                  document.getElementById("hButton").style.color = "plum";
+               }
+                hCount++;
+               }
+              </script>
+        
+              <i onclick="toggleIdeas()" class="fa fa-comment" style="color:plum;"></i>
+              <div id="ideas" style="display: none;">
+          <!-- Comment section HTML goes here -->
+              <form>
+              <label for="name">Name:</label>
+              <input type="text"id="name"><br><br>
+              <label for="ideas">Comment:</label><br>
+              <textarea style="font-size:16px; background-color:#f5f5f5;" id="ideas" rows="5" cols="40"></textarea><br><br>
+              <button type="button"
+              onclick="addIdeas()">Post</button>
+        
+              </form>
+              </div>
+        
+              <script>
+              function addIdeas() {
+              var name = document.getElementById("name").value;
+              var comment = document.getElementById("ideas").value;
+              var commentBox = document.getElementById("ideas");
+              var newComment = document.createElement("div");
+              newComment.innerHTML = "<strong>" + name + "</strong><br>" + comment;
+              commentBox.appendChild(newComment);
+              }
+              function toggleIdeas() {
+              var comments = document.getElementById('ideas');
+              if (comments.style.display === 'none') {
+              comments.style.display = 'block';
+              } else {
+              comments.style.display = 'none';
+              }
+              }
+              </script>
+        </div>
+    </div>
+        
+    
+        
+    <div class="footer">
+        <p><i>Remember to hit the subscribe button. Here's to a new chapter in our lives, one filled with endless curiosity and enthusiasm! See you soon, fellow explorers!<br>JOIN MY MAILING LIST
+    
+        <form>
+            <label for="name">Your name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br>
+            <label for="Email Address">Email Address</label><br>
+            <input type="Email Address" id="name" name="name" placeholder="Email Address" required><br>
+            <button type="button" name="subscribe" value="Subscribe">SUBSCRIBE</button>
+        </form></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blaiy.html">Blaiy</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="relations.html">Relations</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+        <a href="#pinterest" class="links">   
+            <i class="fa fa-pinterest"></i>   
+        </a>   
+         <a href="#google" class="links" >   
+                <i class="fa fa-google"></i>   
+        </a>     
+        <a href="#instagram" class="links">   
+                <i class="fa fa-instagram"></i>   
+         </a>                              
+        <a href="#youtube" class="links">   
+                <i class="fa fa-youtube"></i>   
+        </a> 
+        <a href="#email" class="links">   
+          <i class="fa fa-envelope"></i>   
+    </a> 
+        </ul>
+    
+        <p>Copy right &copy; 2023 by Blaiy</p> 
+         
+    </div>
+</body>
+</html>
