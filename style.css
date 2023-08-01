@@ -106,7 +106,7 @@ form{
     text-align: center;
 }
 button{
-    background-color: mediumslateblue;
+    background-color: plum;
     color:aliceblue;
 }
 .intro{
@@ -167,4 +167,18 @@ button{
 .d-image img{
     width:100%;
     height:auto;
+}
+.film-images{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.film-images img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.film{
+    display:flex;
 }
