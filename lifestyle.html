@@ -8,70 +8,122 @@
     <link rel="layout" href="layout.drawio"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .fa {
-          font-size: 15px;
-          cursor: pointer;
-          user-select:none;
-
-        }
-        
-        .fa:hover {
-          color: darkblue;
-        }
+      .navbar{
+        background-image: url(pastel.jpg);
+        opacity: 0.7;
+        border: 1px rgb(207, 194, 188);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+       }
+      .navbar li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+        .welcomes{
+          background-image: url(study1.jpg);
+          background-size: contain;
+          color: white;
+          padding: 50px;
+          text-align: center;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: bolder;
+          font-size: xx-large;
+      }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="blaiy.png"alt="logo-image" height="10%" width="10%">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="lifestyle.html">Lifestyle</a></li>
-                    <li><a href="family.html">Family/Friends</a></li>
-                    <li><a href="food.html">Food</a></li>       
-                    <a href="#pinterest" class="links">   
-                        <i class="fa fa-pinterest"></i>   
-                    </a>   
-                     <a href="#google" class="links" >   
-                            <i class="fa fa-google"></i>   
-                    </a>     
-                    <a href="#instagram" class="links">   
-                            <i class="fa fa-instagram"></i>   
-                     </a>                              
-                    <a href="#youtube" class="links">   
-                            <i class="fa fa-youtube"></i>   
-                    </a> 
-                </ul>  
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blaiy.html">Blaiy</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="relations.html">Relations</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="travel.html">Travel</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+          </ul> 
+      </div>
+        <div style="position:relative;">
+        <img src="girl.png" height="100%" width="100%">
+        <p style="position:absolute; top:40%; left:50%; transform:translate(-50%,-50%); color:white;font-size:150px;"><b><i>Lifestyle</i><b></b></p>
+      </div>
+      <div class="welcomes">
+        <h3>I'm Trying, Believe Me</h3>
+    </div>
+    <div class="study">
+        <img src="cs.jpg"/>
+        <p> A JOURNEY OF CURIOSITY AND CODE: LIFE AS A COMPUTER SCIENCE STUDENT<br><br>
+            Life as a computer science student is an exhilarating journey fueled by unyielding curiosity and a passion for innovation. From the early days of exploring how computers work, to mastering an array of programming languages, each step leads to new horizons. The challenges they face in complex problem-solving scenarios develop their analytical acumen and perseverance. Collaboration and communication skills flourish as they work with peers on exciting projects. Amidst the rapid technological advancements, they learn to adapt swiftly and stay at the forefront of the ever-changing tech world. Balancing theoretical knowledge with hands-on application, students become adept at transforming ideas into real-world solutions. Beyond the technical realm, they find freedom in creativity, merging art and technology to create novel and visually appealing projects. The exhilaration peaks during hackathons, where they showcase their skills, innovation, and teamwork under intense time constraints. Ultimately, the journey of a computer science student molds them into confident professionals poised to make an impact and revolutionize our digital future. </p>  
+    </div>
+    <div class="lifestyle">
+        <div class="life-images">
+            <img src="l1.jpg" height="350px" width="250px">
+            <img src="l2.jpg" height="350px" width="250px">
+            <img src="l4.jpg" height="350px" width="250px">
+            <img src="l15.jpg" height="350px" width="250px">
+            <img src="l10.jpg" height="350px" width="250px">
             
-                
-                
-            </div>
-            <div class="content-right">
-                <div class="sunset" ><img src="sunset.jpg" max-height="100%" max-width="100%"/></div>
-    <div class="text" >
-        <h3>There has always been something about the sunset. I don't know if it's how the colors combine to make this beautiful site or how the sun feels warm on the face.But I'm so glad I got to capture this moment</h3>
-        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-   
-        <script>
-        function myFunction(x) {
-        x.classList.toggle("fa-thumbs-down");
-       }
-        </script>
-        <i onclick="comment()" class="fa fa-comments"></i>
-        <script>
-            function comment(){
-                var y=
-                document.createElement("TEXTAREA");
-                var z=document.createTextNode("comment here");
-                y.appendChild(z);
-                document.body.appendChild(y);
-   
-            }
-        </script>
         </div>
+        <div class="life-images">
+            <img src="l3.jpg" height="350px" width="250px">
+            <img src="l6.jpg" height="350px" width="250px">
+            <img src="l5.jpg" height="350px" width="250px">
+            <img src="l13.jpg" height="350px" width="250px">
+            <img src="l11.jpg" height="350px" width="250px">
+            
+        </div>
+        <div class="life-images">
+            <img src="l7.jpg" height="350px" width="250px">
+            <img src="l9.jpg" height="350px" width="250px">
+            <img src="l8.jpg" height="350px" width="250px">
+            <img src="l14.jpg" height="350px" width="250px">
+            <img src="l12.jpg" height="350px" width="250px">
+            
+        </div>
+       
+    </div>
+    <div class="footer">
+        <p><i>Remember to hit the subscribe button. Here's to a new chapter in our lives, one filled with endless curiosity and enthusiasm! See you soon, fellow explorers!<br>JOIN MY MAILING LIST
+    
+        <form>
+            <label for="name">Your name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br>
+            <label for="Email Address">Email Address</label><br>
+            <input type="Email Address" id="name" name="name" placeholder="Email Address" required><br>
+            <button type="button" name="subscribe" value="Subscribe">SUBSCRIBE</button>
+        </form></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blaiy.html">Blaiy</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="relations.html">Relations</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+        <a href="#pinterest" class="links">   
+            <i class="fa fa-pinterest"></i>   
+        </a>   
+         <a href="#google" class="links" >   
+                <i class="fa fa-google"></i>   
+        </a>     
+        <a href="#instagram" class="links">   
+                <i class="fa fa-instagram"></i>   
+         </a>                              
+        <a href="#youtube" class="links">   
+                <i class="fa fa-youtube"></i>   
+        </a> 
+        <a href="#email" class="links">   
+          <i class="fa fa-envelope"></i>   
+    </a> 
+        </ul>
+    
+        <p>Copy right &copy; 2023 by Blaiy</p> 
+         
+    </div>
 </body>
 </html>
+

@@ -182,3 +182,192 @@ button{
 .film{
     display:flex;
 }
+.reads{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.books{
+    width:16.66%;
+    padding:10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.books img{
+    width:100%;
+    height:auto;
+}
+.music-images{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.music-images img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.music{
+    display:flex;
+}
+.blaiy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    background-image: url(pastel.jpg);
+}
+.blaiy img{
+    border-radius: 10%;
+}
+.killua{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.killua img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.gojo{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.gojo img{
+    float:right; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.dazai{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.dazai img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.chuuya{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.chuuya img{
+    float:right; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.hisoka{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.hisoka img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.tengen{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tengen img{
+    float:right; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.loid{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+}
+.loid img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 100px;
+    height:100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.study{
+    display:flex; 
+    flex-direction: row;
+    align-items:end;
+    background-image:url(pastel.jpg)
+}
+.study img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 400px;
+    height:400px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.life-images{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.life-images img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.lifestyle{
+    display:flex;
+}
+.family{
+    display:flex; 
+    justify-content: center;
+    align-items:center;
+    background-image:url(pastel.jpg)
+}
+.family img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 400px;
+    height:400px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.friend{
+    display:flex; 
+    justify-content: center;
+    align-items:center;
+    background-image:url(pastel.jpg)
+}
+.friend img{
+    float:left; 
+    margin-right:10px; 
+    border-radius:50%;
+    width: 400px;
+    height:400px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
